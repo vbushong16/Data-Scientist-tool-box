@@ -1,0 +1,55 @@
+Git bash commands:
+
+#configuring a username and email (needs to match the github email)
+git config -global user.name "your username"
+git config --global user.email "bushong.victor@gmail.com"
+git remote set-url origin https://github.com/vbushong16/coursera_DStoolbox_wk2_1
+
+
+#checking configurations:
+git config --list
+
+#creating new directory:
+mkdir ~/newdir (~) is base dir
+pwd (shows all folders)
+ls (shows folders and files)
+
+#change directory
+cd ~/new dir
+cd .
+
+#initialise a new repository work
+git init
+
+#remote add to github repository:
+git remote add origin https://github.com/username/reponame
+
+#clone a repo if the repo isn't yours:
+git clone https://github.com/vbushong16/learnstreet.git   
+
+#add changes:
+git add -A (add and commit changes)
+git add -u(add changes)
+
+#to write message after a change:
+git commit -m "message"
+
+
+# run this before pushing new files out
+git pull --rebase origin master
+git push origin master
+
+#abreviated pull/push command
+(git pull --rebase)
+(git push)
+
+
+#create a new branch:
+git checkout -b branchname
+
+#check all changes:
+git log
+git log -p -2
+
+#NEED TO LEARN BRANCHING AND CLONING OTHERS REPO
+
